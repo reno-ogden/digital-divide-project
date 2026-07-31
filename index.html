@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A rough website prototype arguing that internet access alone does not create digital inclusion."
+    />
+    <title>Connected Is Not the Same as Included | Rough Prototype</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <a class="site-name" href="#top">Digital Inclusion Project</a>
+      <nav aria-label="Main navigation">
+        <a href="#comparison">Comparison</a>
+        <a href="#framework">Five parts</a>
+        <a href="#evidence">Evidence</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="prototype-label">Rough website prototype</p>
+          <h1>Connected Is Not the Same as Included</h1>
+          <p class="thesis">
+            Having Wi-Fi does not automatically mean someone can fully
+            participate online. Digital inclusion also requires a useful device,
+            digital skills, accessible websites, and human support.
+          </p>
+          <a class="button" href="#comparison">See the basic comparison</a>
+        </div>
+
+        <aside class="feedback-box" aria-labelledby="feedback-title">
+          <h2 id="feedback-title">What I am testing</h2>
+          <p>
+            Is the main argument clear, and does a website feel like a
+            purposeful format for presenting it?
+          </p>
+        </aside>
+      </section>
+
+      <section class="section" id="comparison">
+        <div class="section-heading">
+          <p class="section-number">01</p>
+          <div>
+            <h2>Internet access can hide the barriers behind it.</h2>
+            <p>
+              Switch between the two views to compare access by itself with
+              meaningful digital inclusion.
+            </p>
+          </div>
+        </div>
+
+        <div class="comparison">
+          <div
+            class="comparison-controls"
+            aria-label="Choose a comparison view"
+          >
+            <button
+              class="view-button is-active"
+              type="button"
+              data-view="access"
+              aria-pressed="true"
+            >
+              Access only
+            </button>
+            <button
+              class="view-button"
+              type="button"
+              data-view="included"
+              aria-pressed="false"
+            >
+              Meaningful inclusion
+            </button>
+          </div>
+
+          <article class="comparison-panel" aria-live="polite">
+            <p class="panel-label" data-panel-label>Connected</p>
+            <h3 data-panel-title>Online, but still blocked</h3>
+            <p data-panel-description>
+              The person can open an online job application, but several
+              barriers still prevent them from submitting it.
+            </p>
+            <ul class="status-list" data-status-list>
+              <li><span class="status yes">Yes</span> Reliable internet</li>
+              <li><span class="status no">No</span> Appropriate device</li>
+              <li><span class="status no">No</span> Digital confidence</li>
+              <li><span class="status no">No</span> Accessible website</li>
+              <li><span class="status no">No</span> Technical support</li>
+            </ul>
+            <p class="result result-blocked" data-result>
+              Result: The task is not completed.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="framework">
+        <div class="section-heading">
+          <p class="section-number">02</p>
+          <div>
+            <h2>Digital inclusion depends on five connected parts.</h2>
+            <p>
+              These first-draft cards show the framework I plan to develop
+              visually in the final website.
+            </p>
+          </div>
+        </div>
+
+        <div class="framework-list">
+          <details open>
+            <summary>1. Reliable internet</summary>
+            <p>
+              Service needs to be affordable, dependable, and strong enough for
+              school, work, healthcare, and other important tasks.
+            </p>
+          </details>
+
+          <details>
+            <summary>2. Appropriate devices</summary>
+            <p>
+              An old phone or shared computer may connect to the internet but
+              still be unable to run the tools a person needs.
+            </p>
+          </details>
+
+          <details>
+            <summary>3. Digital skills and confidence</summary>
+            <p>
+              People need practical skills for learning new systems, judging
+              information, protecting themselves, and solving problems.
+            </p>
+          </details>
+
+          <details>
+            <summary>4. Accessible design</summary>
+            <p>
+              Websites and services need to work for people with different
+              disabilities, devices, and ways of navigating.
+            </p>
+          </details>
+
+          <details>
+            <summary>5. Human support</summary>
+            <p>
+              Patient and respectful help can keep one confusing screen or error
+              message from ending the entire task.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section" id="evidence">
+        <div class="section-heading">
+          <p class="section-number">03</p>
+          <div>
+            <h2>Access does not guarantee readiness.</h2>
+            <p>
+              This is the first statistic selected for the argument. More
+              research visuals will be added after peer feedback.
+            </p>
+          </div>
+        </div>
+
+        <article class="evidence-card">
+          <p class="big-number">52%</p>
+          <p>
+            of adults in a 2016 Pew Research Center study were placed in groups
+            considered relatively hesitant about online learning.
+          </p>
+          <a
+            href="https://www.pewresearch.org/internet/2016/09/20/digital-readiness-gaps/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Read the Pew Research Center study
+          </a>
+        </article>
+      </section>
+
+      <section class="section section-alt" id="planned">
+        <div class="section-heading">
+          <p class="section-number">04</p>
+          <div>
+            <h2>Planned for the next version</h2>
+            <p>
+              The final site will let visitors follow a person through an online
+              task and add the missing forms of support.
+            </p>
+          </div>
+        </div>
+
+        <div class="scenario-placeholder">
+          <p class="placeholder-label">Interactive scenario placeholder</p>
+          <h3>Can Jordan complete an online job application?</h3>
+          <div class="placeholder-steps" aria-hidden="true">
+            <span>Connection</span>
+            <span>Device</span>
+            <span>Skills</span>
+            <span>Accessibility</span>
+            <span>Support</span>
+          </div>
+          <p>
+            This section is currently a layout idea. The interaction, outcome,
+            and supporting visuals still need to be built.
+          </p>
+        </div>
+      </section>
+
+      <section class="draft-action">
+        <p class="prototype-label">Draft takeaway</p>
+        <h2>
+          Measure digital inclusion by participation, not signal strength.
+        </h2>
+        <p>
+          Final action steps for students, colleges, libraries, and
+          organizations will be developed after feedback.
+        </p>
+      </section>
+
+      <section class="sources" aria-labelledby="sources-title">
+        <h2 id="sources-title">Sources being used</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www.digitalinclusion.org/definitions/"
+              target="_blank"
+              rel="noreferrer"
+              >National Digital Inclusion Alliance, “Definitions”</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.pewresearch.org/internet/2016/09/20/digital-readiness-gaps/"
+              target="_blank"
+              rel="noreferrer"
+              >Pew Research Center, “Digital Readiness Gaps”</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://afb.org/research-and-initiatives/bdis-series/barriers-digital-inclusion-2"
+              target="_blank"
+              rel="noreferrer"
+              >American Foundation for the Blind, “Barriers to Digital Inclusion
+              2”</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Rough prototype for ENGL 120 Project 4</p>
+    </footer>
+  </body>
+</html>
