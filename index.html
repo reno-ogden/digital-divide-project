@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A rough website prototype arguing that internet access alone does not create digital inclusion."
+      content="A simple, interactive argument for colleges, libraries, nonprofits, and community groups: getting people online matters, but it is not enough for meaningful digital inclusion."
     />
-    <title>Connected Is Not the Same as Included | Rough Prototype</title>
+    <meta name="theme-color" content="#071923" />
+    <title>Connected Is Not the Same as Included</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
   </head>
@@ -15,250 +16,1327 @@
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header class="site-header">
-      <a class="site-name" href="#top">Digital Inclusion Project</a>
-      <nav aria-label="Main navigation">
-        <a href="#comparison">Comparison</a>
-        <a href="#framework">Five parts</a>
-        <a href="#evidence">Evidence</a>
-      </nav>
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a
+          class="brand"
+          href="#top"
+          aria-label="Digital Inclusion Project home"
+        >
+          <span class="brand-mark" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="brand-copy">
+            <strong>Digital Inclusion</strong>
+            <small>For program leaders</small>
+          </span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <a href="#difference">Why access is not enough</a>
+          <a href="#framework">What inclusion needs</a>
+          <a href="#evidence">The research</a>
+          <a href="#participation-test">Try the program test</a>
+        </nav>
+
+        <a class="nav-action" href="#take-action">Program checklist</a>
+      </div>
     </header>
 
     <main id="main-content">
-      <section class="hero" id="top">
-        <div class="hero-copy">
-          <p class="prototype-label">Rough website prototype</p>
-          <h1>Connected Is Not the Same as Included</h1>
-          <p class="thesis">
-            Having Wi-Fi does not automatically mean someone can fully
-            participate online. Digital inclusion also requires a useful device,
-            digital skills, accessible websites, and human support.
-          </p>
-          <a class="button" href="#comparison">See the basic comparison</a>
-        </div>
+      <section class="hero section-dark" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid page-shell">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              For colleges, libraries, nonprofits, and community groups
+            </p>
 
-        <aside class="feedback-box" aria-labelledby="feedback-title">
-          <h2 id="feedback-title">What I am testing</h2>
-          <p>
-            Is the main argument clear, and does a website feel like a
-            purposeful format for presenting it?
-          </p>
-        </aside>
-      </section>
+            <h1 id="hero-title">
+              Connected
+              <span class="hero-contrast">is not the same as</span>
+              Included.
+            </h1>
 
-      <section class="section" id="comparison">
-        <div class="section-heading">
-          <p class="section-number">01</p>
-          <div>
-            <h2>Internet access can hide the barriers behind it.</h2>
-            <p>
-              Switch between the two views to compare access by itself with
-              meaningful digital inclusion.
+            <p class="hero-thesis">
+              If your organization funds, builds, or runs digital-access
+              programs, this argument is for you. Treat an internet connection
+              as the starting point, not the finish line. People also need a
+              device that works for the task, practical skills, accessible
+              services, and someone to turn to when they get stuck.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#participation-test">
+                Test a digital-access program
+                <span aria-hidden="true">↓</span>
+              </a>
+              <a class="text-link" href="#evidence">Explore the research</a>
+            </div>
+
+            <p class="hero-note">
+              When one part is missing, people can be shut out of jobs, classes,
+              healthcare, benefits, and everyday communication even while they
+              are technically online.
             </p>
           </div>
-        </div>
 
-        <div class="comparison">
           <div
-            class="comparison-controls"
-            aria-label="Choose a comparison view"
+            class="hero-visual"
+            aria-label="A visual comparison between being connected and being included"
           >
-            <button
-              class="view-button is-active"
-              type="button"
-              data-view="access"
-              aria-pressed="true"
-            >
-              Access only
-            </button>
-            <button
-              class="view-button"
-              type="button"
-              data-view="included"
-              aria-pressed="false"
-            >
-              Meaningful inclusion
-            </button>
-          </div>
+            <div class="signal-orbit orbit-one" aria-hidden="true"></div>
+            <div class="signal-orbit orbit-two" aria-hidden="true"></div>
 
-          <article class="comparison-panel" aria-live="polite">
-            <p class="panel-label" data-panel-label>Connected</p>
-            <h3 data-panel-title>Online, but still blocked</h3>
-            <p data-panel-description>
-              The person can open an online job application, but several
-              barriers still prevent them from submitting it.
-            </p>
-            <ul class="status-list" data-status-list>
-              <li><span class="status yes">Yes</span> Reliable internet</li>
-              <li><span class="status no">No</span> Appropriate device</li>
-              <li><span class="status no">No</span> Digital confidence</li>
-              <li><span class="status no">No</span> Accessible website</li>
-              <li><span class="status no">No</span> Technical support</li>
-            </ul>
-            <p class="result result-blocked" data-result>
-              Result: The task is not completed.
-            </p>
-          </article>
+            <article class="status-card status-card-access">
+              <div class="status-card-top">
+                <span class="status-label">
+                  <span
+                    class="status-dot status-dot-gold"
+                    aria-hidden="true"
+                  ></span>
+                  Connected
+                </span>
+                <span class="status-tag">Signal available</span>
+              </div>
+
+              <div class="device-frame" aria-hidden="true">
+                <div class="device-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="device-content">
+                  <div class="wifi-symbol"><i></i><i></i><i></i><b></b></div>
+                  <div class="error-line"></div>
+                  <div class="error-line error-line-short"></div>
+                  <div class="error-message">Task blocked</div>
+                </div>
+              </div>
+
+              <p>
+                The connection works, but the person still cannot complete the
+                task.
+              </p>
+            </article>
+
+            <div class="bridge-gap" aria-hidden="true">
+              <span>+</span>
+            </div>
+
+            <article class="status-card status-card-included">
+              <div class="status-card-top">
+                <span class="status-label">
+                  <span
+                    class="status-dot status-dot-teal"
+                    aria-hidden="true"
+                  ></span>
+                  Included
+                </span>
+                <span class="status-tag">Participation possible</span>
+              </div>
+
+              <div class="inclusion-stack" aria-hidden="true">
+                <span style="--stack-index: 0">Reliable connection</span>
+                <span style="--stack-index: 1">Usable device</span>
+                <span style="--stack-index: 2">Skills and confidence</span>
+                <span style="--stack-index: 3">Accessible design</span>
+                <span style="--stack-index: 4">Human support</span>
+              </div>
+
+              <p>
+                Every part works together so the person can finish the task with
+                the support they need.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-bottom-line page-shell" aria-hidden="true">
+          <span>Getting online is the starting point.</span>
+          <span>Being able to participate is the real goal.</span>
         </div>
       </section>
 
-      <section class="section section-alt" id="framework">
-        <div class="section-heading">
-          <p class="section-number">02</p>
-          <div>
-            <h2>Digital inclusion depends on five connected parts.</h2>
+      <section
+        class="difference section-light"
+        id="difference"
+        aria-labelledby="difference-title"
+      >
+        <div class="page-shell">
+          <div class="section-heading centered-heading">
+            <p class="eyebrow eyebrow-dark">The measurement problem</p>
+            <h2 id="difference-title">
+              Connection numbers can look good even when people are still stuck.
+            </h2>
             <p>
-              These first-draft cards show the framework I plan to develop
-              visually in the final website.
+              Try the same job application with two different levels of support.
+              The internet connection stays exactly the same.
             </p>
           </div>
-        </div>
 
-        <div class="framework-list">
-          <details open>
-            <summary>1. Reliable internet</summary>
-            <p>
-              Service needs to be affordable, dependable, and strong enough for
-              school, work, healthcare, and other important tasks.
-            </p>
-          </details>
+          <div class="comparison" data-comparison>
+            <div
+              class="comparison-tabs"
+              role="tablist"
+              aria-label="Compare digital access"
+            >
+              <button
+                class="comparison-tab is-active"
+                id="access-tab"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="access-panel"
+                data-comparison-tab="access"
+              >
+                <span class="tab-number">01</span>
+                Access only
+              </button>
+              <button
+                class="comparison-tab"
+                id="inclusion-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="inclusion-panel"
+                data-comparison-tab="inclusion"
+                tabindex="-1"
+              >
+                <span class="tab-number">02</span>
+                Meaningful inclusion
+              </button>
+            </div>
 
-          <details>
-            <summary>2. Appropriate devices</summary>
-            <p>
-              An old phone or shared computer may connect to the internet but
-              still be unable to run the tools a person needs.
-            </p>
-          </details>
+            <div class="comparison-stage">
+              <div class="comparison-context">
+                <p class="context-label">The program goal</p>
+                <h3>
+                  Help a community member complete an online job application
+                </h3>
+                <p>
+                  Both versions can be counted as a successful connection. Only
+                  one gives the person a fair chance to finish.
+                </p>
+              </div>
 
-          <details>
-            <summary>3. Digital skills and confidence</summary>
-            <p>
-              People need practical skills for learning new systems, judging
-              information, protecting themselves, and solving problems.
-            </p>
-          </details>
+              <div
+                class="comparison-panel is-active"
+                id="access-panel"
+                role="tabpanel"
+                aria-labelledby="access-tab"
+                data-comparison-panel="access"
+              >
+                <div class="panel-summary">
+                  <span
+                    class="summary-icon summary-icon-warning"
+                    aria-hidden="true"
+                    >!</span
+                  >
+                  <div>
+                    <p>Connection status</p>
+                    <h3>Online, but still stuck</h3>
+                  </div>
+                  <span class="summary-result result-warning"
+                    >Task incomplete</span
+                  >
+                </div>
 
-          <details>
-            <summary>4. Accessible design</summary>
-            <p>
-              Websites and services need to work for people with different
-              disabilities, devices, and ways of navigating.
-            </p>
-          </details>
+                <ul class="status-list" aria-label="Access only conditions">
+                  <li class="status-row status-row-positive">
+                    <span class="row-icon" aria-hidden="true">✓</span>
+                    <span
+                      ><strong>Internet connection</strong
+                      ><small>Available and working</small></span
+                    >
+                    <span class="row-state">Present</span>
+                  </li>
+                  <li class="status-row status-row-negative">
+                    <span class="row-icon" aria-hidden="true">×</span>
+                    <span
+                      ><strong>Appropriate device</strong
+                      ><small
+                        >Form does not work well on an old phone</small
+                      ></span
+                    >
+                    <span class="row-state">Barrier</span>
+                  </li>
+                  <li class="status-row status-row-negative">
+                    <span class="row-icon" aria-hidden="true">×</span>
+                    <span
+                      ><strong>Digital confidence</strong
+                      ><small>Instructions use unfamiliar terms</small></span
+                    >
+                    <span class="row-state">Barrier</span>
+                  </li>
+                  <li class="status-row status-row-negative">
+                    <span class="row-icon" aria-hidden="true">×</span>
+                    <span
+                      ><strong>Accessible design</strong
+                      ><small
+                        >Required fields are not clearly identified</small
+                      ></span
+                    >
+                    <span class="row-state">Barrier</span>
+                  </li>
+                  <li class="status-row status-row-negative">
+                    <span class="row-icon" aria-hidden="true">×</span>
+                    <span
+                      ><strong>Technical support</strong
+                      ><small>No person is available to help</small></span
+                    >
+                    <span class="row-state">Barrier</span>
+                  </li>
+                </ul>
+              </div>
 
-          <details>
-            <summary>5. Human support</summary>
-            <p>
-              Patient and respectful help can keep one confusing screen or error
-              message from ending the entire task.
-            </p>
-          </details>
-        </div>
-      </section>
+              <div
+                class="comparison-panel"
+                id="inclusion-panel"
+                role="tabpanel"
+                aria-labelledby="inclusion-tab"
+                data-comparison-panel="inclusion"
+                hidden
+              >
+                <div class="panel-summary">
+                  <span
+                    class="summary-icon summary-icon-success"
+                    aria-hidden="true"
+                    >✓</span
+                  >
+                  <div>
+                    <p>Participation status</p>
+                    <h3>Supported and able to finish</h3>
+                  </div>
+                  <span class="summary-result result-success"
+                    >Task complete</span
+                  >
+                </div>
 
-      <section class="section" id="evidence">
-        <div class="section-heading">
-          <p class="section-number">03</p>
-          <div>
-            <h2>Access does not guarantee readiness.</h2>
-            <p>
-              This is the first statistic selected for the argument. More
-              research visuals will be added after peer feedback.
-            </p>
+                <ul
+                  class="status-list"
+                  aria-label="Meaningful inclusion conditions"
+                >
+                  <li class="status-row status-row-positive">
+                    <span class="row-icon" aria-hidden="true">✓</span>
+                    <span
+                      ><strong>Reliable connection</strong
+                      ><small>Affordable and stable service</small></span
+                    >
+                    <span class="row-state">Present</span>
+                  </li>
+                  <li class="status-row status-row-positive">
+                    <span class="row-icon" aria-hidden="true">✓</span>
+                    <span
+                      ><strong>Appropriate device</strong
+                      ><small
+                        >A laptop that supports the application</small
+                      ></span
+                    >
+                    <span class="row-state">Present</span>
+                  </li>
+                  <li class="status-row status-row-positive">
+                    <span class="row-icon" aria-hidden="true">✓</span>
+                    <span
+                      ><strong>Digital confidence</strong
+                      ><small>Clear guidance and practiced skills</small></span
+                    >
+                    <span class="row-state">Present</span>
+                  </li>
+                  <li class="status-row status-row-positive">
+                    <span class="row-icon" aria-hidden="true">✓</span>
+                    <span
+                      ><strong>Accessible design</strong
+                      ><small
+                        >Understandable, keyboard-friendly form</small
+                      ></span
+                    >
+                    <span class="row-state">Present</span>
+                  </li>
+                  <li class="status-row status-row-positive">
+                    <span class="row-icon" aria-hidden="true">✓</span>
+                    <span
+                      ><strong>Technical support</strong
+                      ><small>Patient help is available if needed</small></span
+                    >
+                    <span class="row-state">Present</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <article class="evidence-card">
-          <p class="big-number">52%</p>
-          <p>
-            of adults in a 2016 Pew Research Center study were placed in groups
-            considered relatively hesitant about online learning.
-          </p>
-          <a
-            href="https://www.pewresearch.org/internet/2016/09/20/digital-readiness-gaps/"
-            target="_blank"
-            rel="noreferrer"
+          <p
+            class="comparison-takeaway"
+            aria-live="polite"
+            data-comparison-live
           >
-            Read the Pew Research Center study
-          </a>
-        </article>
-      </section>
-
-      <section class="section section-alt" id="planned">
-        <div class="section-heading">
-          <p class="section-number">04</p>
-          <div>
-            <h2>Planned for the next version</h2>
-            <p>
-              The final site will let visitors follow a person through an online
-              task and add the missing forms of support.
-            </p>
-          </div>
-        </div>
-
-        <div class="scenario-placeholder">
-          <p class="placeholder-label">Interactive scenario placeholder</p>
-          <h3>Can Jordan complete an online job application?</h3>
-          <div class="placeholder-steps" aria-hidden="true">
-            <span>Connection</span>
-            <span>Device</span>
-            <span>Skills</span>
-            <span>Accessibility</span>
-            <span>Support</span>
-          </div>
-          <p>
-            This section is currently a layout idea. The interaction, outcome,
-            and supporting visuals still need to be built.
+            The connection works, but four other barriers still stop the person
+            from finishing.
           </p>
         </div>
       </section>
 
-      <section class="draft-action">
-        <p class="prototype-label">Draft takeaway</p>
-        <h2>
-          Measure digital inclusion by participation, not signal strength.
-        </h2>
-        <p>
-          Final action steps for students, colleges, libraries, and
-          organizations will be developed after feedback.
-        </p>
-      </section>
+      <section
+        class="framework section-cream"
+        id="framework"
+        aria-labelledby="framework-title"
+      >
+        <div class="page-shell">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow eyebrow-dark">A program design model</p>
+              <h2 id="framework-title">
+                A strong program needs all five parts.
+              </h2>
+            </div>
+            <p>
+              Click each part to see why it matters, what happens when it is
+              missing, and what an organization can do about it.
+            </p>
+          </div>
 
-      <section class="sources" aria-labelledby="sources-title">
-        <h2 id="sources-title">Sources being used</h2>
-        <ul>
-          <li>
+          <div class="framework-layout">
+            <div
+              class="pillar-list"
+              role="list"
+              aria-label="Five parts of digital inclusion"
+            >
+              <button
+                class="pillar-card is-active"
+                type="button"
+                aria-pressed="true"
+                data-pillar="connection"
+              >
+                <span class="pillar-number">01</span>
+                <span
+                  class="pillar-symbol pillar-signal"
+                  aria-hidden="true"
+                ></span>
+                <span class="pillar-copy">
+                  <strong>Reliable connection</strong>
+                  <small>Affordable, robust broadband</small>
+                </span>
+                <span class="pillar-arrow" aria-hidden="true">→</span>
+              </button>
+
+              <button
+                class="pillar-card"
+                type="button"
+                aria-pressed="false"
+                data-pillar="device"
+              >
+                <span class="pillar-number">02</span>
+                <span
+                  class="pillar-symbol pillar-device"
+                  aria-hidden="true"
+                ></span>
+                <span class="pillar-copy">
+                  <strong>Appropriate device</strong>
+                  <small>Technology that meets the user’s needs</small>
+                </span>
+                <span class="pillar-arrow" aria-hidden="true">→</span>
+              </button>
+
+              <button
+                class="pillar-card"
+                type="button"
+                aria-pressed="false"
+                data-pillar="skills"
+              >
+                <span class="pillar-number">03</span>
+                <span
+                  class="pillar-symbol pillar-skills"
+                  aria-hidden="true"
+                ></span>
+                <span class="pillar-copy">
+                  <strong>Skills and confidence</strong>
+                  <small>Training for safe, independent use</small>
+                </span>
+                <span class="pillar-arrow" aria-hidden="true">→</span>
+              </button>
+
+              <button
+                class="pillar-card"
+                type="button"
+                aria-pressed="false"
+                data-pillar="accessibility"
+              >
+                <span class="pillar-number">04</span>
+                <span
+                  class="pillar-symbol pillar-accessibility"
+                  aria-hidden="true"
+                  >A</span
+                >
+                <span class="pillar-copy">
+                  <strong>Accessible design</strong>
+                  <small>Content people can perceive and use</small>
+                </span>
+                <span class="pillar-arrow" aria-hidden="true">→</span>
+              </button>
+
+              <button
+                class="pillar-card"
+                type="button"
+                aria-pressed="false"
+                data-pillar="support"
+              >
+                <span class="pillar-number">05</span>
+                <span class="pillar-symbol pillar-support" aria-hidden="true"
+                  >?</span
+                >
+                <span class="pillar-copy">
+                  <strong>Human support</strong>
+                  <small>Quality help without judgment</small>
+                </span>
+                <span class="pillar-arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <aside class="pillar-detail" data-pillar-detail aria-live="polite">
+              <p class="detail-kicker">Part 01</p>
+              <h3>Reliable connection</h3>
+              <p class="detail-description">
+                A person needs internet service that is affordable, dependable,
+                and strong enough for essential tasks.
+              </p>
+
+              <div class="detail-grid">
+                <div>
+                  <span class="detail-label">When it is present</span>
+                  <p>
+                    Learning, work, healthcare, and communication remain
+                    reachable.
+                  </p>
+                </div>
+                <div>
+                  <span class="detail-label detail-label-warning"
+                    >When it is missing</span
+                  >
+                  <p>
+                    People may ration data, lose work, or depend on public
+                    Wi-Fi.
+                  </p>
+                </div>
+              </div>
+
+              <p class="detail-action">
+                <span>Program response</span>
+                Affordable plans, stable infrastructure, and clear enrollment
+                support.
+              </p>
+            </aside>
+          </div>
+
+          <p class="framework-source">
+            This model follows the National Digital Inclusion Alliance’s
+            definition of digital inclusion.
             <a
               href="https://www.digitalinclusion.org/definitions/"
               target="_blank"
               rel="noreferrer"
-              >National Digital Inclusion Alliance, “Definitions”</a
+              >View the definition <span aria-hidden="true">↗</span></a
             >
-          </li>
-          <li>
-            <a
-              href="https://www.pewresearch.org/internet/2016/09/20/digital-readiness-gaps/"
-              target="_blank"
-              rel="noreferrer"
-              >Pew Research Center, “Digital Readiness Gaps”</a
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="evidence section-dark"
+        id="evidence"
+        aria-labelledby="evidence-title"
+      >
+        <div class="page-shell">
+          <div class="section-heading split-heading split-heading-dark">
+            <div>
+              <p class="eyebrow">Evidence behind the argument</p>
+              <h2 id="evidence-title">
+                Access alone misses the barriers that decide whether people can
+                participate.
+              </h2>
+            </div>
+            <p>
+              These sources focus on different groups and measure different
+              parts of the problem. Together, they show why access, skills,
+              design, support, and larger institutional choices all matter.
+            </p>
+          </div>
+
+          <div class="stat-grid">
+            <article class="stat-card stat-card-featured">
+              <p class="stat-source">Pew Research Center · 2016</p>
+              <div class="stat-value-row">
+                <strong class="stat-value" data-count-to="52">52</strong>
+                <span>%</span>
+              </div>
+              <h3>of adults were “relatively hesitant”</h3>
+              <p>
+                In Pew’s study of readiness for online learning, this group had
+                lower digital skills, trust, or use of digital learning tools.
+              </p>
+              <div class="stat-bar" aria-hidden="true">
+                <span style="--bar-width: 52%"></span>
+              </div>
+              <a
+                href="https://www.pewresearch.org/internet/2016/09/20/digital-readiness-gaps/"
+                target="_blank"
+                rel="noreferrer"
+                >Read the study <span aria-hidden="true">↗</span></a
+              >
+            </article>
+
+            <article class="stat-card">
+              <p class="stat-source">Pew Research Center · 2016</p>
+              <div class="stat-value-row">
+                <strong class="stat-value" data-count-to="17">17</strong>
+                <span>%</span>
+              </div>
+              <h3>were classified as “digitally ready”</h3>
+              <p>
+                This group felt confident using digital tools and was more
+                likely to use them for personal learning.
+              </p>
+              <div class="stat-bar stat-bar-teal" aria-hidden="true">
+                <span style="--bar-width: 17%"></span>
+              </div>
+            </article>
+
+            <article class="stat-card">
+              <p class="stat-source">
+                American Foundation for the Blind · 2024
+              </p>
+              <div class="stat-value-row">
+                <strong class="stat-value" data-count-to="20">20</strong>
+                <span>%</span>
+              </div>
+              <h3>of documented barriers were not resolved</h3>
+              <p>
+                In a diary study of 20 blind or low-vision adults, inaccessible
+                technology sometimes stopped the task completely.
+              </p>
+              <div class="stat-bar stat-bar-coral" aria-hidden="true">
+                <span style="--bar-width: 20%"></span>
+              </div>
+              <a
+                href="https://afb.org/research-and-initiatives/bdis-series/barriers-digital-inclusion-2/non-resolution-digital-barriers"
+                target="_blank"
+                rel="noreferrer"
+                >Read the report <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
+
+          <p class="evidence-note">
+            <strong>Context matters.</strong> Pew studied readiness for online
+            learning, while AFB studied accessibility barriers faced by blind
+            and low-vision adults. I am not treating either group as a picture
+            of everyone’s digital experience.
+          </p>
+
+          <div class="research-map" aria-labelledby="research-map-title">
+            <div class="research-map-heading">
+              <div>
+                <p class="context-label">The rest of the picture</p>
+                <h3 id="research-map-title">
+                  Six more sources show what connection numbers leave out.
+                </h3>
+              </div>
+              <p>
+                Taken together, the research follows a clear path: access
+                quality affects what is possible, skills and support shape what
+                people can do, and institutional choices decide whether help
+                lasts.
+              </p>
+            </div>
+
+            <div class="research-insight-grid">
+              <article>
+                <p class="insight-label">Access quality</p>
+                <h3>
+                  More people are online, but they are not connected in the same
+                  way.
+                </h3>
+                <p>
+                  NTIA reported 13 million more internet users from 2021 to
+                  2023, while lower-income households and several racial and
+                  ethnic groups were still more likely to rely only on
+                  smartphones.
+                </p>
+                <a
+                  class="source-chip"
+                  href="https://www.ntia.gov/blog/2024/new-ntia-data-show-13-million-more-internet-users-us-2023-2021"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Read Goldberg's 2024 NTIA analysis"
+                  >Goldberg, 2024 <span aria-hidden="true">↗</span></a
+                >
+              </article>
+
+              <article>
+                <p class="insight-label">Connected layers</p>
+                <h3>
+                  Digital opportunity depends on more than one program or
+                  service.
+                </h3>
+                <p>
+                  The Urban Institute connects infrastructure, access, skills,
+                  online safety, and effective use. If one layer is weak, the
+                  benefits of the others can be limited too.
+                </p>
+                <a
+                  class="source-chip"
+                  href="https://www.urban.org/research/publication/expanding-digital-opportunity"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Read Junod and coauthors' 2025 Urban Institute framework"
+                  >Junod et al., 2025 <span aria-hidden="true">↗</span></a
+                >
+              </article>
+
+              <article>
+                <p class="insight-label">Unequal outcomes</p>
+                <h3>
+                  The divide continues after someone gets a device and a
+                  connection.
+                </h3>
+                <p>
+                  Reisdorf and Rhinesmith separate material access from skills
+                  and from the outcomes people receive. This helps explain why
+                  similar access can still lead to very different opportunities.
+                </p>
+                <a
+                  class="source-chip"
+                  href="https://doi.org/10.17645/si.v8i2.3184"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Read Reisdorf and Rhinesmith's 2020 article"
+                  >Reisdorf &amp; Rhinesmith, 2020
+                  <span aria-hidden="true">↗</span></a
+                >
+              </article>
+
+              <article>
+                <p class="insight-label">Personal support</p>
+                <h3>
+                  Handing out a device does not teach someone how to feel
+                  comfortable using it.
+                </h3>
+                <p>
+                  In a Baltimore program for 20 older adults, participants said
+                  the one-on-one training was the most useful part. Support made
+                  the technology feel less unfamiliar and stressful.
+                </p>
+                <a
+                  class="source-chip"
+                  href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8742748/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Read Gleason and Suen's 2022 article"
+                  >Gleason &amp; Suen, 2022 <span aria-hidden="true">↗</span></a
+                >
+              </article>
+
+              <article>
+                <p class="insight-label">Community programs</p>
+                <h3>
+                  Digital navigators help, but the organizations supporting them
+                  need resources too.
+                </h3>
+                <p>
+                  Research at ten Texas libraries found that programs adjusted
+                  to local needs, but staffing, funding, procurement, and uneven
+                  partnerships limited what they could keep offering.
+                </p>
+                <a
+                  class="source-chip"
+                  href="https://doi.org/10.5325/jinfopoli.14.2024.0007"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Read Strover, Nelson, and Lalwani's 2024 article"
+                  >Strover et al., 2024 <span aria-hidden="true">↗</span></a
+                >
+              </article>
+
+              <article>
+                <p class="insight-label">Structural responsibility</p>
+                <h3>
+                  Local support cannot fix every market or policy problem on its
+                  own.
+                </h3>
+                <p>
+                  Philadelphia’s pandemic response showed how limited data,
+                  logistics, funding, provider resistance, and digital redlining
+                  can keep unequal access in place.
+                </p>
+                <a
+                  class="source-chip"
+                  href="https://ijoc.org/index.php/ijoc/article/view/18305"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Read Popiel and Pickard's 2022 article"
+                  >Popiel &amp; Pickard, 2022
+                  <span aria-hidden="true">↗</span></a
+                >
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="participation section-light"
+        id="participation-test"
+        aria-labelledby="participation-title"
+      >
+        <div class="page-shell">
+          <div class="section-heading centered-heading">
+            <p class="eyebrow eyebrow-dark">Program design test</p>
+            <h2 id="participation-title">
+              Would your program let John finish?
+            </h2>
+            <p>
+              John is a fictional example based on barriers repeated across the
+              research, not a real participant. Imagine your organization is
+              planning a program. Choose what to include and watch the outcome
+              change.
+            </p>
+          </div>
+
+          <div class="scenario" data-scenario>
+            <div class="scenario-person">
+              <div class="person-visual" aria-hidden="true">
+                <span class="person-head"></span>
+                <span class="person-body"></span>
+                <span class="person-device">
+                  <i></i>
+                </span>
+              </div>
+              <div class="person-copy">
+                <p class="context-label">The situation</p>
+                <h3>John needs to apply for a job online.</h3>
+                <p>
+                  The deadline is tonight. Your program already helped John get
+                  online, but a working signal does not guarantee that the
+                  application can be completed.
+                </p>
+              </div>
+            </div>
+
+            <div class="scenario-controls">
+              <div class="control-header">
+                <div>
+                  <p class="context-label">Make the program choices</p>
+                  <h3>What will your program provide?</h3>
+                </div>
+                <button class="reset-button" type="button" data-scenario-reset>
+                  Reset
+                </button>
+              </div>
+
+              <div
+                class="support-toggles"
+                aria-label="Digital inclusion supports"
+              >
+                <button
+                  class="support-toggle is-on is-locked"
+                  type="button"
+                  aria-pressed="true"
+                  data-support="connection"
+                  disabled
+                >
+                  <span class="toggle-switch" aria-hidden="true"><i></i></span>
+                  <span
+                    ><strong>Internet</strong
+                    ><small>Already funded</small></span
+                  >
+                </button>
+                <button
+                  class="support-toggle"
+                  type="button"
+                  aria-pressed="false"
+                  data-support="device"
+                >
+                  <span class="toggle-switch" aria-hidden="true"><i></i></span>
+                  <span
+                    ><strong>Usable device</strong
+                    ><small>Form-compatible laptop</small></span
+                  >
+                </button>
+                <button
+                  class="support-toggle"
+                  type="button"
+                  aria-pressed="false"
+                  data-support="skills"
+                >
+                  <span class="toggle-switch" aria-hidden="true"><i></i></span>
+                  <span
+                    ><strong>Clear guidance</strong
+                    ><small>Skills and plain language</small></span
+                  >
+                </button>
+                <button
+                  class="support-toggle"
+                  type="button"
+                  aria-pressed="false"
+                  data-support="accessibility"
+                >
+                  <span class="toggle-switch" aria-hidden="true"><i></i></span>
+                  <span
+                    ><strong>Accessible form</strong
+                    ><small>Easy to perceive and navigate</small></span
+                  >
+                </button>
+                <button
+                  class="support-toggle"
+                  type="button"
+                  aria-pressed="false"
+                  data-support="support"
+                >
+                  <span class="toggle-switch" aria-hidden="true"><i></i></span>
+                  <span
+                    ><strong>Human support</strong
+                    ><small>Help without judgment</small></span
+                  >
+                </button>
+              </div>
+
+              <button
+                class="button button-secondary add-all-button"
+                type="button"
+                data-scenario-all
+              >
+                Add the missing supports
+              </button>
+            </div>
+
+            <div
+              class="scenario-outcome is-blocked"
+              data-scenario-outcome
+              aria-live="polite"
             >
-          </li>
-          <li>
-            <a
-              href="https://afb.org/research-and-initiatives/bdis-series/barriers-digital-inclusion-2"
-              target="_blank"
-              rel="noreferrer"
-              >American Foundation for the Blind, “Barriers to Digital Inclusion
-              2”</a
+              <div class="outcome-progress" aria-hidden="true">
+                <span style="--progress: 20%"></span>
+              </div>
+              <div class="outcome-icon" aria-hidden="true">!</div>
+              <div>
+                <p class="context-label">Program outcome · 1 of 5 parts</p>
+                <h3>Connected, but still blocked.</h3>
+                <p>
+                  The connection works, but four other barriers still keep John
+                  from finishing the application.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <blockquote class="scenario-takeaway">
+            <p>
+              Every version of this scenario can be reported as one new
+              connection. Only the complete version lets John finish the task.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      <section
+        class="take-action section-teal"
+        id="take-action"
+        aria-labelledby="action-title"
+      >
+        <div class="page-shell">
+          <div class="action-lead">
+            <p class="eyebrow eyebrow-dark">What program leaders can do</p>
+            <h2 id="action-title">
+              Fund the whole path,
+              <span>not just the first step.</span>
+            </h2>
+            <p>
+              Before starting, renewing, or evaluating a digital-access program,
+              ask whether people can complete the tasks that matter safely,
+              accessibly, and with the level of help they need.
+            </p>
+          </div>
+
+          <div class="action-grid">
+            <article>
+              <span class="action-number">01</span>
+              <p class="action-audience">Plan</p>
+              <h3>
+                Start by listening to the people the program is meant to serve.
+              </h3>
+              <p>
+                Ask what they actually need to do online, and include disabled
+                users when testing websites, forms, and tools.
+              </p>
+            </article>
+            <article>
+              <span class="action-number">02</span>
+              <p class="action-audience">Deliver</p>
+              <h3>Build the other supports alongside the connection.</h3>
+              <p>
+                Provide devices that fit the task, practical training,
+                accessible services, and patient technical help.
+              </p>
+            </article>
+            <article>
+              <span class="action-number">03</span>
+              <p class="action-audience">Evaluate</p>
+              <h3>
+                Measure whether people can finish, not only what was handed out.
+              </h3>
+              <p>
+                Track whether people can learn, apply, communicate, and solve
+                problems with the support available to them.
+              </p>
+            </article>
+          </div>
+
+          <div class="program-check" aria-labelledby="program-check-title">
+            <div class="program-check-heading">
+              <div>
+                <p class="action-audience">Five-question program check</p>
+                <h3 id="program-check-title">
+                  Before you call the program inclusive, can you answer yes?
+                </h3>
+              </div>
+              <button class="print-button" type="button" data-print-checklist>
+                Print this checklist
+              </button>
+            </div>
+
+            <div class="program-check-list" data-program-checklist>
+              <label
+                ><input type="checkbox" />
+                <span
+                  >Is the connection affordable, reliable, and strong enough for
+                  essential tasks?</span
+                ></label
+              >
+              <label
+                ><input type="checkbox" />
+                <span
+                  >Can each participant use a device appropriate for their
+                  actual goals?</span
+                ></label
+              >
+              <label
+                ><input type="checkbox" />
+                <span
+                  >Does training build practical skills and confidence without
+                  judgment?</span
+                ></label
+              >
+              <label
+                ><input type="checkbox" />
+                <span
+                  >Are the program’s websites, forms, documents, and tools
+                  accessible?</span
+                ></label
+              >
+              <label
+                ><input type="checkbox" />
+                <span
+                  >Can participants reach patient, ongoing human support when
+                  something goes wrong?</span
+                ></label
+              >
+            </div>
+
+            <p
+              class="program-check-result"
+              data-program-check-result
+              aria-live="polite"
             >
-          </li>
-        </ul>
+              0 of 5 commitments selected. A connection alone is only the first
+              step.
+            </p>
+          </div>
+
+          <p class="closing-line">
+            Do not stop at, “Did we connect someone?” Also ask, “Could they
+            actually finish what they came to do?”
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="sources section-cream"
+        id="sources"
+        aria-labelledby="sources-title"
+      >
+        <div class="page-shell sources-shell">
+          <div>
+            <p class="eyebrow eyebrow-dark">Research and attribution</p>
+            <h2 id="sources-title">Sources</h2>
+            <p class="sources-intro">
+              This argument draws on eight research sources. The National
+              Digital Inclusion Alliance definition also shapes the five-part
+              model used throughout the site.
+            </p>
+          </div>
+
+          <div class="source-list">
+            <p class="source-group-label">Research used in this argument</p>
+
+            <details>
+              <summary>
+                <span>Gleason and Suen · Outreach and training</span>
+                <span class="summary-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="source-body">
+                <p class="mla-citation">
+                  Gleason, Kelly, and Jonathan J. Suen. “Going beyond
+                  Affordability for Digital Equity: Closing the ‘Digital Divide’
+                  through Outreach and Training Programs for Older Adults.”
+                  <em>Journal of the American Geriatrics Society</em>, vol. 70,
+                  no. 1, 2022, pp. 75–77. <em>PubMed Central</em>,
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8742748/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >pmc.ncbi.nlm.nih.gov/articles/PMC8742748/</a
+                  >.
+                  <a
+                    href="https://doi.org/10.1111/jgs.17511"
+                    target="_blank"
+                    rel="noreferrer"
+                    >https://doi.org/10.1111/jgs.17511</a
+                  >.
+                </p>
+                <p>
+                  Supports the point that devices and internet access work
+                  better when they come with outreach and one-on-one help.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                <span>Goldberg · National internet-use data</span>
+                <span class="summary-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="source-body">
+                <p class="mla-citation">
+                  Goldberg, Rafi. “New NTIA Data Show 13 Million More Internet
+                  Users in the U.S. in 2023 than 2021.”
+                  <em
+                    >National Telecommunications and Information
+                    Administration</em
+                  >, 6 June 2024,
+                  <a
+                    href="https://www.ntia.gov/blog/2024/new-ntia-data-show-13-million-more-internet-users-us-2023-2021"
+                    target="_blank"
+                    rel="noreferrer"
+                    >www.ntia.gov/blog/2024/new-ntia-data-show-13-million-more-internet-users-us-2023-2021</a
+                  >.
+                </p>
+                <p>
+                  Provides the national adoption increase and shows the unequal
+                  ways different groups connect, including smartphone-only
+                  access.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                <span>Horrigan · Digital readiness</span>
+                <span class="summary-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="source-body">
+                <p class="mla-citation">
+                  Horrigan, John B. <em>Digital Readiness Gaps</em>. Pew
+                  Research Center, 20 Sept. 2016,
+                  <a
+                    href="https://www.pewresearch.org/internet/2016/09/20/digital-readiness-gaps/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >www.pewresearch.org/internet/2016/09/20/digital-readiness-gaps/</a
+                  >.
+                </p>
+                <p>
+                  Provides the 52% “relatively hesitant” and 17% “digitally
+                  ready” findings about readiness for online learning.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                <span>Junod and coauthors · Digital opportunity framework</span>
+                <span class="summary-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="source-body">
+                <p class="mla-citation">
+                  Junod, Anne N., et al.
+                  <em
+                    >Expanding Digital Opportunity: A Framework and Road Map for
+                    Strengthening Digital Inclusion</em
+                  >. Urban Institute, 18 Feb. 2025,
+                  <a
+                    href="https://www.urban.org/research/publication/expanding-digital-opportunity"
+                    target="_blank"
+                    rel="noreferrer"
+                    >www.urban.org/research/publication/expanding-digital-opportunity</a
+                  >.
+                </p>
+                <p>
+                  Connects infrastructure, access, skills, safety, and effective
+                  technology use in one digital-opportunity model.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                <span>Popiel and Pickard · Digital redlining</span>
+                <span class="summary-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="source-body">
+                <p class="mla-citation">
+                  Popiel, Pawel, and Victor Pickard. “Digital Redlining and the
+                  Endless Divide: Philadelphia’s COVID-19 Digital Inclusion
+                  Efforts.” <em>International Journal of Communication</em>,
+                  vol. 16, 2022, pp. 3329–3353,
+                  <a
+                    href="https://ijoc.org/index.php/ijoc/article/view/18305"
+                    target="_blank"
+                    rel="noreferrer"
+                    >ijoc.org/index.php/ijoc/article/view/18305</a
+                  >.
+                </p>
+                <p>
+                  Shows why local support programs cannot solve unequal
+                  investment, market choices, and public-policy problems alone.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                <span>Reisdorf and Rhinesmith · Social inclusion</span>
+                <span class="summary-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="source-body">
+                <p class="mla-citation">
+                  Reisdorf, Bianca, and Colin Rhinesmith. “Digital Inclusion as
+                  a Core Component of Social Inclusion.”
+                  <em>Social Inclusion</em>, vol. 8, no. 2, 2020, pp. 132–137,
+                  <a
+                    href="https://doi.org/10.17645/si.v8i2.3184"
+                    target="_blank"
+                    rel="noreferrer"
+                    >https://doi.org/10.17645/si.v8i2.3184</a
+                  >.
+                </p>
+                <p>
+                  Connects material access, skills and uses, and the unequal
+                  outcomes people receive from technology.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                <span>Silverman and coauthors · Accessibility barriers</span>
+                <span class="summary-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="source-body">
+                <p class="mla-citation">
+                  Silverman, Arielle M., et al.
+                  <em
+                    >Barriers to Digital Inclusion 2: Documenting Digital Access
+                    Challenges for People Who Are Blind or Have Low Vision</em
+                  >. American Foundation for the Blind, Apr. 2024,
+                  <a
+                    href="https://afb.org/research-and-initiatives/bdis-series/barriers-digital-inclusion-2"
+                    target="_blank"
+                    rel="noreferrer"
+                    >afb.org/research-and-initiatives/bdis-series/barriers-digital-inclusion-2</a
+                  >.
+                </p>
+                <p>
+                  Provides diary-study evidence showing that strong skills
+                  cannot make an inaccessible website or application usable.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                <span>Strover, Nelson, and Lalwani · Digital navigators</span>
+                <span class="summary-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="source-body">
+                <p class="mla-citation">
+                  Strover, Sharon, Whitney Nelson, and Sheila Lalwani. “Framing
+                  Access: Digital Navigators and Libraries.”
+                  <em>Journal of Information Policy</em>, vol. 14, 2024, pp.
+                  389–414,
+                  <a
+                    href="https://doi.org/10.5325/jinfopoli.14.2024.0007"
+                    target="_blank"
+                    rel="noreferrer"
+                    >https://doi.org/10.5325/jinfopoli.14.2024.0007</a
+                  >.
+                </p>
+                <p>
+                  Provides the library-based navigator example and documents the
+                  staffing, funding, procurement, and partnership limits those
+                  programs face.
+                </p>
+              </div>
+            </details>
+
+            <p class="source-group-label source-group-label-extra">
+              Digital-inclusion framework
+            </p>
+
+            <details>
+              <summary>
+                <span>National Digital Inclusion Alliance · Definition</span>
+                <span class="summary-plus" aria-hidden="true">+</span>
+              </summary>
+              <div class="source-body">
+                <p class="mla-citation">
+                  National Digital Inclusion Alliance. “Definitions.”
+                  <em>NDIA</em>,
+                  <a
+                    href="https://www.digitalinclusion.org/definitions/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >www.digitalinclusion.org/definitions/</a
+                  >. Accessed 30 July 2026.
+                </p>
+                <p>
+                  Provides the five-part digital inclusion model used as the
+                  interactive planning framework on this website.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Rough prototype for ENGL 120 Project 4</p>
+    <footer class="site-footer">
+      <div class="page-shell footer-grid">
+        <p>
+          <strong>Connected Is Not the Same as Included</strong>
+          <span>ENGL 120 Final Multimodal Argument</span>
+        </p>
+        <p>
+          Created by Reno Ogden · 2026 · For digital-inclusion program leaders
+          <a href="#top">Back to top ↑</a>
+        </p>
+      </div>
     </footer>
+
+    <noscript>
+      <div class="noscript-message">
+        This page still contains the full argument without JavaScript, but its
+        comparison and participation controls require JavaScript to update.
+      </div>
+    </noscript>
   </body>
 </html>
